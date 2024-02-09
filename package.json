@@ -1,0 +1,23 @@
+{
+  "name": "rs-nodejs-crud-api",
+  "version": "1.0.0",
+  "description": "CRUD API",
+  "main": "index.ts",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/V1kk195/RS-nodejs-CRUD-API.git"
+  },
+  "author": "Viktoriia Fedotkina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/V1kk195/RS-nodejs-CRUD-API/issues"
+  },
+  "homepage": "https://github.com/V1kk195/RS-nodejs-CRUD-API#readme"
+}
