@@ -5,13 +5,16 @@ export const getRoutes = async (
   req: http.IncomingMessage,
   res: http.ServerResponse,
 ) => {
-  switch (req.url) {
+  const url = req.url?.split("/");
+  const route = `/${url?.[1]}/${url?.[2]}`;
+
+  switch (route) {
     case "/api/users":
       await getUsers(req, res);
       break;
     default:
       res.statusCode = 404;
-      res.write(`${req.url} doesn't exist`);
+      res.write(`Endpoint ${req.url} doesn't exist`);
       res.end();
   }
 };
